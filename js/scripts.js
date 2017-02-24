@@ -10,11 +10,11 @@ var populateNumber = function(num) {
 var replaceNumber = function(numArray) {
     for (var i = 1; i < numArray.length; i++) {
         if (numArray[i] % 15 === 0) {
-            numArray.splice(i, 1, "ping pong")
+            numArray.splice(i, 1, "Ping Pong")
         } else if (numArray[i] % 5 === 0) {
-            numArray.splice(i, 1, "pong")
+            numArray.splice(i, 1, "Pong")
         } else if (numArray[i] % 3 === 0) {
-            numArray.splice(i, 1, "ping")
+            numArray.splice(i, 1, "Ping")
         } else {
             console.log("do nothing")
         }
