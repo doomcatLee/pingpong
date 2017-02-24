@@ -1,7 +1,7 @@
 
 # Ping Pong Project
 
-#### February 24, 2017. v1.0.0
+#### February 24, 2017 v1.0.0
 #### By _Alex Lee_
 
 ## Specifications
@@ -11,7 +11,7 @@ Specs | Input | Output
 Function that will loop through the array to replace current element if divisible by 3/5/15 with ping/pong/ping-pong | [3,4,5,6,7,8,9] | ["ping",4,"pong",6,7,8,9]
 Function that can spit out the final array into a list in html | ["ping",4,"pong",6,7,8,9]| Displayed in html
 Function that will insert array items into the li tag in HTML | function(array) | <li> item1 </li> <li>item2</li>
-Function that will validate userinput. If less than zero, throw an alert | function(input)| "Number must be bigger than or equal to 0 "
+Function that will validate userinput. If less than zero, throw an alert | function(input)| Alert("Number must be bigger than or equal to 0 ")
 
 ## Description
 
@@ -38,10 +38,10 @@ Contact Alex at doomcat9167@gmail.com for any reported bugs
 
 ## Technologies Used
 
-_HTML_
-_CSS_
-_jQuery/jQuery UI_
-_javascript_
+* HTML
+* CSS
+* jQuery/jQuery UI
+* javaScript
 
 ### License
 
