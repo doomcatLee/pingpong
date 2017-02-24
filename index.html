@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/scripts.js"></script>
+    <title>Ping Pong</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="main">
+        <h1>Ping-Pong</h1>
+        <form id="main">
+          <button type="submit" id="main">Start</button>
+        </form>
+      </div><!--main-->
+      <div id="content">
+        <div class="jumbotron">
+          <h1>Ping-Pong</h1>
+        </div>
+        <h1>Let's play!</h1>
+        <h2>Rules: </h2>
+        <ul id="guide">
+          <li>1. Numbers divisible by 3 become "ping"</li>
+          <li>2. Numbers divisible by 5 become "pong"</li>
+          <li>3. Numbers divisible by 15 become "ping-pong"</li>
+        </ul>
+        <form id="input">
+          <label for="enter">Enter a number here: </label>
+          <input type="number" name="enter" id="enter">
+          <button type="submit" name="button" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div id="result">
+        <ul id="output">
+
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
