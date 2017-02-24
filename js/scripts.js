@@ -1,4 +1,6 @@
 //Back-End Logic
+
+//Given a number, make an array of numbers from zero to number
 var populateNumber = function(num) {
     var array = [];
     for (var i = 0; i <= num; i++) {
@@ -6,6 +8,7 @@ var populateNumber = function(num) {
     }
     return array;
 };
+//Given array of numbers, replace certain numbers with words based on their logic
 var replaceNumber = function(numArray) {
     for (var i = 1; i < numArray.length; i++) {
         if (numArray[i] % 15 === 0) {
@@ -20,12 +23,13 @@ var replaceNumber = function(numArray) {
     }
     return numArray;
 };
+//Given array and tag name for output, prints list of arrays in html
 var displayToList = function(array, target) {
     for (var i = 0; i < array.length; i++) {
         $("#" + target).append("<li style='display: none;'>" + array[i] + "</li>");
     }
 };
-//Validate userinput if less than zero throw an alert
+//Validate user input if less than zero throw an alert
 var validateInput = function(userInput) {
     if (userInput < 0) {
         alert("Please enter a number bigger than zero")
