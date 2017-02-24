@@ -29,6 +29,8 @@ var displayToList = function(array, target) {
 var validateInput = function(userInput) {
     if (userInput < 0) {
         alert("Please enter a number bigger than zero")
+    } else {
+        return userInput;
     }
 };
 //Front-end Logic
@@ -36,7 +38,7 @@ $(function() {
     $("#main").submit(function() {
         event.preventDefault();
         $("#main").hide();
-        $("#content").show();
+        $("#content").fadeIn(700);
     });
     $("#input").submit(function() {
         event.preventDefault();
@@ -50,10 +52,10 @@ $(function() {
             run()
 
             function run() {
-                a.filter('.active').fadeOut(500).removeClass('active');
-                a.eq(index).fadeIn(500).addClass('active');
+                a.filter('.active').fadeOut(300).removeClass('active');
+                a.eq(index).fadeIn(300).addClass('active');
                 index = (index + 1) % a.length; // Wraps around if it hits the end
-                setTimeout(run, 1000);
+                setTimeout(run, 600);
             }
         })(); //run()
     }); //submit
