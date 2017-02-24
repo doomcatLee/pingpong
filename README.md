@@ -9,8 +9,9 @@ Specs | Input | Output
 --- | --- | ---
  When user inputs a number, populate all the numbers equal to and below into an array of numbers | 10 | [1,2,3,4,5,6,7,8,9,10]
 Function that will loop through the array to replace current element if divisible by 3/5/15 with ping/pong/ping-pong | [3,4,5,6,7,8,9] | ["ping",4,"pong",6,7,8,9]
-Function that can spit out the final array into a list in html | ["ping",4,"pong",6,7,8,9]| Displayed in html|
-Function that will insert array items into the li tag in HTML | function(array) | <li> item1 </li> <li>item2</li>|
+Function that can spit out the final array into a list in html | ["ping",4,"pong",6,7,8,9]| Displayed in html
+Function that will insert array items into the li tag in HTML | function(array) | <li> item1 </li> <li>item2</li>
+Function that will validate userinput. If less than zero, throw an alert | function(input)| "Number must be bigger than or equal to 0 "
 
 ## Description
 

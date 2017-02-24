@@ -24,7 +24,13 @@ var displayToList = function(array, target) {
     for (var i = 0; i < array.length; i++) {
         $("#" + target).append("<li style='display: none;'>" + array[i] + "</li>");
     }
-}
+};
+//Validate userinput if less than zero throw an alert
+var validateInput = function(userInput) {
+    if (userInput < 0) {
+        alert("Please enter a number bigger than zero")
+    }
+};
 //Front-end Logic
 $(function() {
     $("#main").submit(function() {
@@ -34,7 +40,7 @@ $(function() {
     });
     $("#input").submit(function() {
         event.preventDefault();
-        var userInput = parseInt($("#enter").val());
+        var userInput = validateInput(parseInt($("#enter").val()));
         var resultArray = replaceNumber(populateNumber(userInput));
         displayToList(resultArray, "output");
         //Display each hidden list with fade
