@@ -1,10 +1,29 @@
 
 #content{
-  display: none;
+  /*display: none;*/
 }
 
-
-
-li{
+#guide{
   list-style: none;
+}
+
+form#input{
+  margin-top: 20px;
+text-align: center;
+}
+
+ul#output{
+  position:relative;
+  margin-top: 50px;
+  text-align: center;
+
+}
+
+ul#output li{
+  color:red;
+  list-style: none;
+  font-size: 100px;
+  position: absolute;
+  left: 50%;
+
 }
