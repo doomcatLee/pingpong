@@ -6,7 +6,6 @@ var populateNumber = function(num) {
     }
     return array;
 };
-
 var replaceNumber = function(numArray) {
     for (var i = 1; i < numArray.length; i++) {
         if (numArray[i] % 15 === 0) {
@@ -16,12 +15,16 @@ var replaceNumber = function(numArray) {
         } else if (numArray[i] % 3 === 0) {
             numArray.splice(i, 1, "Ping")
         } else {
-            console.log("do nothing")
+            console.log("leave the number")
         }
     }
     return numArray;
 };
-
+var displayToList = function(array, target) {
+    for (var i = 0; i < array.length; i++) {
+        $("#" + target).append("<li style='display: none;'>" + array[i] + "</li>");
+    }
+}
 //Front-end Logic
 $(function() {
     $("#main").submit(function() {
@@ -31,12 +34,9 @@ $(function() {
     });
     $("#input").submit(function() {
         event.preventDefault();
-
         var userInput = parseInt($("#enter").val());
         var resultArray = replaceNumber(populateNumber(userInput));
-        for (var i = 0; i < resultArray.length; i++) {
-            $("#output").append("<li style='display: none;'>" + resultArray[i] + "</li>");
-        } //forLoop
+        displayToList(resultArray, "output");
         //Display each hidden list with fade
         (function() {
             var a = $('#output').children();

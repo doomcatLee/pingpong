@@ -10,37 +10,37 @@ Specs | Input | Output
  When user inputs a number, populate all the numbers equal to and below into an array of numbers | 10 | [1,2,3,4,5,6,7,8,9,10]
 Function that will loop through the array to replace current element if divisible by 3/5/15 with ping/pong/ping-pong | [3,4,5,6,7,8,9] | ["ping",4,"pong",6,7,8,9]
 Function that can spit out the final array into a list in html | ["ping",4,"pong",6,7,8,9]| Displayed in html|
+Function that will insert array items into the li tag in HTML | function(array) | <li> item1 </li> <li>item2</li>|
 
 ## Description
 
-Description goes here
+PingPong game is a web application that will display 0 to number that user has inputted. Numbers that are divisible by 3 will display ping, numbers that are divisible by 5 will display pong, and numbers that are divisible by 15 will display pingpong instead.
 
 ## Setup/Installation Requirements
 ```
 cd /desiredLocation
 ```
 ```
-git clone https://github.com/doomcatlee/trackSuggester
+git clone https://github.com/doomcatlee/pingpong
 ```
 ```
-cd trackSuggester
+cd pingpong
 ```
 ```
 open index.html
 ```
 
-## Known Bugs
-
-Known bugs here
 
 ## Support and contact details
 
-Contact information here
+Contact Alex at doomcat9167@gmail.com for any reported bugs
 
 ## Technologies Used
 
-_bash_
-_git_
+_HTML_
+_CSS_
+_jQuery/jQuery UI_
+_javascript_
 
 ### License
 
